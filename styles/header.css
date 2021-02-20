@@ -1,0 +1,136 @@
+header {
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+}
+
+.center_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.left_header {
+    position: absolute;
+    left: 0;   
+}
+
+.burger_menu {
+    background-image: url(./img/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.logo {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/dd/YouTube_Premium_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 98px;
+    height: 24px;
+    padding: 8px;
+}
+
+.search_field_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 718px;
+    height: 40px;
+    /* border: 1px solid red; */
+}
+
+.right_header {
+    display: flex;
+    flex-direction: row;
+    width: 185px;
+    height: 40px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+ .search_cnt {   
+    width: 518px;
+    height: 44px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.search_input input {        
+    outline: none;
+    border: 0;
+    padding: 0;
+    padding-left: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    padding-left: 50px;
+    color: #535353; 
+    font-weight: 400;   /* border: 1px solid blue; */
+}
+
+.search_btn button{
+    position: absolute;
+    right:0;
+    top:0;
+    width: 117px;
+    height: 100%;  
+    border: none;  
+    background-color: #F30B0A;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    
+} 
+
+/* mobile 600 */
+/* landscape pc - 1400 */
+@media only screen and (max-width: 600px) {
+    .center_header{
+        justify-content: space-around;
+    }
+    .left_header {
+        position: relative;
+    }
+
+    .search_input input {
+        display: none;
+    }
+
+    .search_btn button {
+        border-radius: 50px;
+        width: 100%;
+        background-image: url("/img/magnifying-glass.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 45%;
+        text-indent: -9000px;
+    }
+    .search_cnt {
+        width: 50px;
+        con
+    }
+
+    .video_container {
+        height:227px;
+        min-height: 250px;
+    }
+
+    .list_container li {
+        margin-left: 0px!important;
+    }
+
+  }
