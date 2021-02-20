@@ -1,17 +1,3 @@
-// let videoData = {
-//     title: "Title1",
-//     description: "Description1",
-//     url: "url",
-//     user: {
-//         name: "Username",
-//         subscribers: 1000,
-//     },
-// }
-
-// console.log(videoItem);
-// console.log(videoItem.user.name);
-// console.log(videoItem["title"]);
-
 let sostav = [
 
     {
@@ -43,7 +29,7 @@ let sostav = [
 
 ];
 
-sostav.forEach(function(vagon) {
+sostav.forEach((vagon) => {
     console.log(vagon.tovar.name)
 
 })

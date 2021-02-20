@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 05 02 2021</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,12 +21,10 @@
         <div class="search_field_header">
             <div class="search_cnt">
                 <div class="search_input">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Enter any video you want">
+                    <div class="search_btn"><button>Search</button></div>
                 </div>
-                <div class="search_btn"></div>
-
             </div>
-            <div class="voice_search_btn"></div>
         </div>
 
         <div class="right_header"></div>
@@ -35,27 +33,32 @@
         <div class="container">
             <div class="left_side">
                 <div class="video_container">
-                    <iframe class="main-video" src="https://www.youtube.com/embed/ipAnwilMncI" frameborder="0"></iframe>
+                    <iframe id="main_video" class="main-video" src="https://www.youtube.com/embed/ipAnwilMncI"
+                        frameborder="0"></iframe>
                     <!-- <img src="./img/video_scr.png" alt="video content"> -->
 
                 </div>
                 <div class="description_container">
-                    <h1 class="content_title">This is the page content title</h1>
-                    <p class="content_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium placeat molestiae similique cupiditate vero atque, adipisci ullam in impedit nihil fuga nobis optio quo quidem deserunt expedita ab eveniet!</p>
+                    <h1 id="video_title" class="content_title">This is the page content title</h1>
+                    <p id="video_description" class="content_description">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Aliquid laudantium placeat molestiae similique cupiditate vero atque, adipisci
+                        ullam in impedit nihil fuga nobis optio quo quidem deserunt expedita ab eveniet!</p>
                 </div>
             </div>
-            <div class="right_side">
-                <ol id="list_cnt" class="list_container">
-                   
-                    </ol>
 
+            <!-- Here we put list from js-->
+            <div class="right_side">
+                <ol id="list_cnt" class="list_container"></ol>
             </div>
 
         </div>
     </section>
 
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./data.json"></script>
     <script src="./video.js"></script>
+    <script src="./user.js"></script>
+    <script src="./star.js"></script>
 
 </body>
 
