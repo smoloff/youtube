@@ -78,7 +78,8 @@ header {
     font-size: 18px;
     padding-left: 50px;
     color: #535353; 
-    font-weight: 400;   /* border: 1px solid blue; */
+    font-weight: 400;  
+    line-height: 43px;
 }
 
 .search_btn button{
